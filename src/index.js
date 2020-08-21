@@ -1,5 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
+let d = new Date();
+var headingStyle = {
+  color: ""
+};
+function day(n) {
+  if (n >= 0 && n < 12) {
+    headingStyle.color = "red";
+    return "Good morning";
+  } else if (n >= 12 && n < 18) {
+    headingStyle.color = "green";
+    return "Good Afternoon";
+  } else if (n >= 18 && n <= 23) {
+    headingStyle.color = "blue";
+    return "Good evening";
+  }
+}
 
 const img = "https://picsum.photos/100";
 ReactDOM.render(
@@ -42,6 +58,12 @@ ReactDOM.render(
         src="https://www.asiaone.com/sites/default/files/styles/a1_og_image/public/original_images/Mar2020/20200311-briyani-pex.jpg?itok=YtjWThUr"
       ></img>
     </div>
+
+    {/* Inline Styling with function */}
+
+    <h1 style={headingStyle} className="heading-1">
+      {day(d.getHours())}
+    </h1>
   </div>,
   document.getElementById("root")
 );
