@@ -8,6 +8,17 @@ ReactDOM.render(
       <h1>Hello World!</h1>
       <p>This is a paragraph</p>
 
+      {/* Ul element in JSX */}
+
+      <div>
+        <h1>This are my favouite coding languages</h1>
+        <ul>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
+      </div>
+
       {/* JSX Attribute & Styling */}
     </div>
     <h1 className="heading" contentEditable="true" spellCheck="false">
