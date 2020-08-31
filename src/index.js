@@ -61,7 +61,6 @@ ReactDOM.render(
     </div>
 
     {/* Inline Styling with function */}
-
     <h1 style={headingStyle} className="heading-1">
       {day(d.getHours())}
     </h1>
