@@ -18,7 +18,6 @@ function day(n) {
 }
 
 const img = "https://picsum.photos/100";
-
 ReactDOM.render(
   <div>
     <div>
