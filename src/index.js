@@ -25,7 +25,6 @@ ReactDOM.render(
       <p>This is a paragraph</p>
 
       {/* Ul element in JSX */}
-
       <div>
         <h1>This are my favouite coding languages</h1>
         <ul>
